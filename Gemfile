@@ -28,6 +28,7 @@ gem "hamlit"
 gem "rubocop-rails"
 gem "better_errors"
 gem 'binding_of_caller'
+gem "devise"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
 
