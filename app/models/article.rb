@@ -24,13 +24,14 @@ class Article < ApplicationRecord
 
     validate :validate_title_and_content_length
 
+    has_many :comments, dependent: :destroy
     belongs_to :user
 
     def display_created_at
         I18n.l( self.created_at, format: :default)
     end
 
-    def auther_name
+    def author_name
         user.display_name
     end
 
