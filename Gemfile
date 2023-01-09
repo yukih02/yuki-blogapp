@@ -5,12 +5,12 @@ ruby '2.7.7'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
+gem 'pg' , '>= 0.18' , '< 2.0'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -29,6 +29,8 @@ gem "rubocop-rails"
 gem "better_errors"
 gem 'binding_of_caller'
 gem "devise"
+gem "aws-sdk-s3" , require: false 
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem 'stimulus-rails'
 
@@ -61,6 +63,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "erb2haml"
   gem "pry-byebug"
+  gem "dotenv-rails"
 end
 
 group :development do
