@@ -28,7 +28,7 @@ class Profile < ApplicationRecord
 
     if days< 0
       "#{years - 1}歳"
-    else 
+    else
       "#{years}歳"
     end
   end
