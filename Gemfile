@@ -24,6 +24,7 @@ gem "turbo-rails"
 gem 'faker'
 
 gem "annotate"
+gem "active_decorator"
 gem "hamlit"
 gem "rubocop-rails"
 gem "better_errors"
